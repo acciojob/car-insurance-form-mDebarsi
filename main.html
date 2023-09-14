@@ -8,6 +8,62 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<form id="my-form" method="post">
+
+		<!--name-->
+		<div>
+			<label for="name">Name</label>
+			<input type="Text" id="name" required/>
+		</div>
+
+		<!--Email-->
+		<div>
+			<label for="email">Email</label>
+			<input type="Email" id="email" required />
+		</div>
+
+		<!--Gender-->
+		<div>
+			<label>Gender : </label>
+			<label for="gender-m">Male</label>
+			<input type="radio" id="gender-m" name="gender" required/>
+			<label for="gender-f">Female</label>
+			<input type="radio" id="gender-f" name="gender" required/>	
+		</div>
+
+        <!--Car Brands-->
+		<div>
+            <label for="cars">Choose Your Car Brand : </label>
+              <select name="car" id="cars" required>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Marcedez">Mercedez</option>
+              </select>
+        </div>
+
+		<!--Car Age-->
+		<div>
+          <label for="car-age">Car Age:</label>
+          <input type="number" id="car-age" min="0" max="40" required />
+       </div>
+
+	  <!--DOP-->
+	  <div>
+        <label for="dop">Date of Purchase(dop)</label>
+		<input type="date" id="dop" required />
+      </div>
+		
+      <!--Password-->
+	  <div>
+        <label for="password">Password</label>
+		<input type="password" id="password" required/>
+      </div>
+		
+      <!--Submit-->
+		<div>
+			<input type ="submit" value="Submit" id="submit">
+		</div>
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
